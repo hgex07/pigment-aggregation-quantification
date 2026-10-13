@@ -2,7 +2,7 @@
 
 Cuantifica la **agregación / dispersión de melanóforos** (*Danio rerio*, campo claro) a partir del patrón de claroscuros de una foto, y compara imágenes de la misma región.
 
-> Estado: prueba de concepto con **una pareja de imágenes** (`data/`). Valida que el método mide algo con sentido; no demuestra ningún efecto biológico.
+> Estado: prueba de concepto. Falta una mayor muestra y de mayor calidad
 
 ## Contexto
 
@@ -71,5 +71,5 @@ results/              # salida de referencia (tablas y figuras)
 - El pigmento total difiere un 37 % entre las dos imágenes: los recortes no contienen exactamente lo mismo, así que el área bruta (×1,68) exagera; el índice de extensión (×1,23) es la cifra a usar.
 - Alineamiento manual aproximado (correlación OD píxel a píxel: 0,54).
 - **El desenfoque se parece a la dispersión**: enfocar igual en todas las fotos.
-- El umbral bajo (0,18) se eligió a ojo con estas dos imágenes; revisarlo con fotos nuevas.
+- El umbral bajo (0,18) se eligió a ojo con estas dos imágenes (revisarlo con fotos nuevas).
 - La estimación de fondo necesita ver algo de tejido sin pigmento en cada recorte.
