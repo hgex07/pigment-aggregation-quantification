@@ -4,13 +4,13 @@ Cuantifica la **agregación / dispersión de melanóforos** (*Danio rerio*, camp
 
 > Estado: prueba de concepto con **una pareja de imágenes** (`data/`). Valida que el método mide algo con sentido; no demuestra ningún efecto biológico.
 
-## Idea
+## Contexto
 
-Agregada o dispersa, la célula tiene la **misma melanina**; cambia su reparto. Agregada: poca superficie y muy oscura. Dispersa: mucha superficie y más clara. Por eso se miden las dos cosas a la vez, y la métrica principal es su cociente:
-
-**índice de extensión = área pigmentada ÷ pigmento total** (bajo = agregado, alto = disperso).
+Al experimentar en clase con melanóforos de Danio rerio, se me ocurrió que debería ser posible estimar numéricamente el grado de agregación y dispersión de la melanina (tras ser expuestos a diferentes compuestos) en base a imágenes de microscopio de campo claro mediante algún tipo de procesamiento, por simple que fuese (escala de grises, saturación, contraste, conteo mediante un umbral simple...), así que este proyecto es el resultado de esta idea llevada a cabo con la ayuda de LLMs.
 
 ## Pipeline
+
+Agregada o dispersa, la célula tiene la **misma melanina** (cambia su reparto). Agregada: poca superficie y muy oscura. Dispersa: mucha superficie y más clara. Al medir las dos cosas simultáneamente y hacer el cociente se puede obtener la métrica principal, el **índice de extensión** (área pigmentada ÷ pigmento total**). El procesamiento de las imágenes se realiza en diferentes fases:
 
 | # | Paso | Para qué |
 |---|------|----------|
@@ -18,20 +18,20 @@ Agregada o dispersa, la célula tiene la **misma melanina**; cambia su reparto. 
 | 2 | Estimar el fondo (polinomio de grado 2 sobre los píxeles claros, 4 iteraciones) | modelar la iluminación sin células |
 | 3 | Transmitancia = gris ÷ fondo | corregir la iluminación irregular |
 | 4 | Densidad óptica OD = −log₁₀(transmitancia) | valor proporcional a la cantidad de melanina (Beer-Lambert) |
-| 5 | Máscara por umbral doble | decidir qué es pigmento |
-| 6 | Métricas | resumir cada imagen en números |
+| 5 | Máscara[^1] por umbral doble | decidir qué es pigmento |
+| 6 | Métricas[^2] | resumir cada imagen en números |
 
-**Máscara (paso 5).** Un píxel es pigmento si OD > 0,18 **y** está conectado a un píxel con OD > umbral de Otsu (calculado con todas las imágenes juntas). Así entran las dendritas claras y no las sombras sueltas del fondo. Ambos umbrales son comunes a todas las imágenes.
+[^1]: Un píxel es pigmento si OD > 0,18 **y** está conectado a un píxel con OD > umbral de Otsu (calculado con todas las imágenes juntas). Así entran las dendritas claras y no las sombras sueltas del fondo. Ambos umbrales son comunes a todas las imágenes.
 
-**Sin CLAHE ni ecualización al medir:** estiran cada foto de forma distinta y harían las imágenes incomparables.
+[^2]: área pigmentada, OD media, pigmento total, **índice de extensión**, solidez y complejidad del contorno, nº y tamaño de manchas (estos dos, poco fiables con células que se tocan).
 
-**Métricas** (`metricas.csv`): área pigmentada, OD media, pigmento total, **índice de extensión**, solidez y complejidad del contorno, nº y tamaño de manchas (estos dos, poco fiables con células que se tocan).
+> Para una mayor robustez, se hace un barrido de 79 umbrales (`barrido_umbrales.csv`) y comparación por teselas de 64 px.
 
-**Robustez:** barrido de 79 umbrales (`barrido_umbrales.csv`) y comparación por teselas de 64 px.
+## Replicación
 
-## Replicar
+Para obtener las imágenes se aconseja fijar tanto la cámara/ocular como la muestra para asegurar la alineación entre regiones, así como tomar las fotos en modo manual y fijar los parámetros fotográficos (ISO, exposure, WB, enfoque...).
 
-Requiere Python ≥ 3.10.
+Para ejecutar el codigo (requiere Python ≥ 3.10):
 
 ```bash
 python -m venv .venv && source .venv/bin/activate
@@ -73,7 +73,3 @@ results/              # salida de referencia (tablas y figuras)
 - **El desenfoque se parece a la dispersión**: enfocar igual en todas las fotos.
 - El umbral bajo (0,18) se eligió a ojo con estas dos imágenes; revisarlo con fotos nuevas.
 - La estimación de fondo necesita ver algo de tejido sin pigmento en cada recorte.
-
-## Para un experimento real
-
-Mismo pez y misma región antes/después; cámara en manual y sin HDR; una foto de campo vacío por sesión; validar contra el Melanophore Index puntuado a ciegas; controles de agregación y dispersión máximas para convertir el índice en un 0–100 %.
