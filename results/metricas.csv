@@ -1,0 +1,4 @@
+imagen,area_pigmentada_pct,od_media_pigmento,pigmento_total_kOD,od_media_imagen,indice_extension,n_manchas,area_mediana_mancha_px,area_media_mancha_px,solidez_media,complejidad_contorno
+img1,22.7843,0.5181,17.1794,0.1411,1.9300,10.0000,3694.0000,3315.6000,0.8643,4.1750
+img2,38.2955,0.4222,23.5269,0.1801,2.3687,5.0000,2858.0000,11145.6000,0.7885,4.2463
+img2 / img1,1.6808,0.8148,1.3695,1.2758,1.2273,0.5000,0.7737,3.3616,0.9124,1.0171

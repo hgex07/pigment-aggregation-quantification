@@ -1,0 +1,20 @@
+{
+  "umbral_semilla_otsu": 0.2735927632771372,
+  "umbral_bajo": 0.18,
+  "parametros": {
+    "blur_sigma": 1.0,
+    "bg_order": 2,
+    "low_thr": 0.18,
+    "min_object_px": 15,
+    "tile_px": 64
+  },
+  "comparacion": {
+    "a": "img1",
+    "b": "img2",
+    "correlacion_od_pixel_a_pixel": 0.5446093079208195,
+    "teselas_b_mayor_que_a": 22,
+    "teselas_totales": 30,
+    "mediana_diferencia_teselas_b_menos_a_pct": 19.970703125,
+    "fraccion_umbrales_b_mayor_que_a": 0.5949367088607594
+  }
+}
