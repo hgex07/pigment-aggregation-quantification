@@ -1,4 +1,4 @@
-# pigment-aggregation-cuantification
+# pigment-aggregation-quantification
 
 Cuantifica la **agregación / dispersión de melanóforos** (*Danio rerio*, campo claro) a partir del patrón de claroscuros de una foto, y compara imágenes de la misma región.
 
@@ -25,9 +25,9 @@ Agregada o dispersa, la célula tiene la **misma melanina** (cambia su reparto).
 
 [^2]: área pigmentada, OD media, pigmento total, **índice de extensión**, solidez y complejidad del contorno, nº y tamaño de manchas (estos dos, poco fiables con células que se tocan).
 
-
+<br>
 > Para una mayor robustez, se hace un barrido de 79 umbrales (`barrido_umbrales.csv`) y comparación por teselas de 64 px.
-
+<br>
 
 ## Replicación
 
