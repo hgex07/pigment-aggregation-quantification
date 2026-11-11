@@ -1,0 +1,577 @@
+channel,bg_order,low_thr,umbral,metrica,grupo,paso,cambio_rel
+R,0,0.1200,global,area_pigmentada_pct,Control,Ringer -> Epi t0,0.0418
+R,0,0.1200,global,area_pigmentada_pct,Control,Epi t0 -> Epi +15,-0.0610
+R,0,0.1200,global,area_pigmentada_pct,Control,Epi +15 -> Vehículo tf,-0.0762
+R,0,0.1200,global,area_pigmentada_pct,L2,Ringer -> Epi 10+10,-0.0053
+R,0,0.1200,global,area_pigmentada_pct,L2,Epi 10+10 -> Forsk +10,0.1183
+R,0,0.1200,global,area_pigmentada_pct,L3,Ringer -> Epi +10,-0.1693
+R,0,0.1200,global,area_pigmentada_pct,L3,Epi +10 -> Caf +15,-0.1513
+R,0,0.1200,global,area_pigmentada_pct,L4,Ringer -> Epi +10,-0.0766
+R,0,0.1200,global,area_pigmentada_pct,L4,Epi +10 -> DBcAMP+Epi +10,-0.1332
+R,0,0.1200,global,area_pigmentada_pct,L4,DBcAMP+Epi +10 -> DBcAMP +10+10,-0.0112
+R,0,0.1200,global,area_pigmentada_pct,L4v2,Ringer -> Epi +10,0.0029
+R,0,0.1200,global,area_pigmentada_pct,L4v2,Epi +10 -> DBcAMP +10,0.1345
+R,0,0.1200,global,indice_extension,Control,Ringer -> Epi t0,0.0195
+R,0,0.1200,global,indice_extension,Control,Epi t0 -> Epi +15,0.0113
+R,0,0.1200,global,indice_extension,Control,Epi +15 -> Vehículo tf,-0.0307
+R,0,0.1200,global,indice_extension,L2,Ringer -> Epi 10+10,-0.0467
+R,0,0.1200,global,indice_extension,L2,Epi 10+10 -> Forsk +10,-0.0284
+R,0,0.1200,global,indice_extension,L3,Ringer -> Epi +10,0.1501
+R,0,0.1200,global,indice_extension,L3,Epi +10 -> Caf +15,-0.1671
+R,0,0.1200,global,indice_extension,L4,Ringer -> Epi +10,-0.0310
+R,0,0.1200,global,indice_extension,L4,Epi +10 -> DBcAMP+Epi +10,0.0971
+R,0,0.1200,global,indice_extension,L4,DBcAMP+Epi +10 -> DBcAMP +10+10,-0.0039
+R,0,0.1200,global,indice_extension,L4v2,Ringer -> Epi +10,0.0037
+R,0,0.1200,global,indice_extension,L4v2,Epi +10 -> DBcAMP +10,0.0401
+R,0,0.1200,por_grupo,area_pigmentada_pct,Control,Ringer -> Epi t0,0.0418
+R,0,0.1200,por_grupo,area_pigmentada_pct,Control,Epi t0 -> Epi +15,-0.0610
+R,0,0.1200,por_grupo,area_pigmentada_pct,Control,Epi +15 -> Vehículo tf,-0.0633
+R,0,0.1200,por_grupo,area_pigmentada_pct,L2,Ringer -> Epi 10+10,-0.0053
+R,0,0.1200,por_grupo,area_pigmentada_pct,L2,Epi 10+10 -> Forsk +10,0.1183
+R,0,0.1200,por_grupo,area_pigmentada_pct,L3,Ringer -> Epi +10,-0.1693
+R,0,0.1200,por_grupo,area_pigmentada_pct,L3,Epi +10 -> Caf +15,-0.1513
+R,0,0.1200,por_grupo,area_pigmentada_pct,L4,Ringer -> Epi +10,-0.0766
+R,0,0.1200,por_grupo,area_pigmentada_pct,L4,Epi +10 -> DBcAMP+Epi +10,-0.1332
+R,0,0.1200,por_grupo,area_pigmentada_pct,L4,DBcAMP+Epi +10 -> DBcAMP +10+10,-0.0112
+R,0,0.1200,por_grupo,area_pigmentada_pct,L4v2,Ringer -> Epi +10,0.0029
+R,0,0.1200,por_grupo,area_pigmentada_pct,L4v2,Epi +10 -> DBcAMP +10,0.1345
+R,0,0.1200,por_grupo,indice_extension,Control,Ringer -> Epi t0,0.0195
+R,0,0.1200,por_grupo,indice_extension,Control,Epi t0 -> Epi +15,0.0113
+R,0,0.1200,por_grupo,indice_extension,Control,Epi +15 -> Vehículo tf,-0.0235
+R,0,0.1200,por_grupo,indice_extension,L2,Ringer -> Epi 10+10,-0.0467
+R,0,0.1200,por_grupo,indice_extension,L2,Epi 10+10 -> Forsk +10,-0.0284
+R,0,0.1200,por_grupo,indice_extension,L3,Ringer -> Epi +10,0.1501
+R,0,0.1200,por_grupo,indice_extension,L3,Epi +10 -> Caf +15,-0.1671
+R,0,0.1200,por_grupo,indice_extension,L4,Ringer -> Epi +10,-0.0310
+R,0,0.1200,por_grupo,indice_extension,L4,Epi +10 -> DBcAMP+Epi +10,0.0971
+R,0,0.1200,por_grupo,indice_extension,L4,DBcAMP+Epi +10 -> DBcAMP +10+10,-0.0039
+R,0,0.1200,por_grupo,indice_extension,L4v2,Ringer -> Epi +10,0.0037
+R,0,0.1200,por_grupo,indice_extension,L4v2,Epi +10 -> DBcAMP +10,0.0401
+R,0,0.1800,global,area_pigmentada_pct,Control,Ringer -> Epi t0,0.0356
+R,0,0.1800,global,area_pigmentada_pct,Control,Epi t0 -> Epi +15,-0.0768
+R,0,0.1800,global,area_pigmentada_pct,Control,Epi +15 -> Vehículo tf,-0.0934
+R,0,0.1800,global,area_pigmentada_pct,L2,Ringer -> Epi 10+10,-0.0071
+R,0,0.1800,global,area_pigmentada_pct,L2,Epi 10+10 -> Forsk +10,0.1491
+R,0,0.1800,global,area_pigmentada_pct,L3,Ringer -> Epi +10,-0.2725
+R,0,0.1800,global,area_pigmentada_pct,L3,Epi +10 -> Caf +15,-0.1104
+R,0,0.1800,global,area_pigmentada_pct,L4,Ringer -> Epi +10,-0.0667
+R,0,0.1800,global,area_pigmentada_pct,L4,Epi +10 -> DBcAMP+Epi +10,-0.1793
+R,0,0.1800,global,area_pigmentada_pct,L4,DBcAMP+Epi +10 -> DBcAMP +10+10,-0.0074
+R,0,0.1800,global,area_pigmentada_pct,L4v2,Ringer -> Epi +10,0.0322
+R,0,0.1800,global,area_pigmentada_pct,L4v2,Epi +10 -> DBcAMP +10,0.1597
+R,0,0.1800,global,indice_extension,Control,Ringer -> Epi t0,0.0151
+R,0,0.1800,global,indice_extension,Control,Epi t0 -> Epi +15,-0.0000
+R,0,0.1800,global,indice_extension,Control,Epi +15 -> Vehículo tf,-0.0457
+R,0,0.1800,global,indice_extension,L2,Ringer -> Epi 10+10,-0.0483
+R,0,0.1800,global,indice_extension,L2,Epi 10+10 -> Forsk +10,-0.0073
+R,0,0.1800,global,indice_extension,L3,Ringer -> Epi +10,0.0428
+R,0,0.1800,global,indice_extension,L3,Epi +10 -> Caf +15,-0.1426
+R,0,0.1800,global,indice_extension,L4,Ringer -> Epi +10,-0.0227
+R,0,0.1800,global,indice_extension,L4,Epi +10 -> DBcAMP+Epi +10,0.0505
+R,0,0.1800,global,indice_extension,L4,DBcAMP+Epi +10 -> DBcAMP +10+10,-0.0010
+R,0,0.1800,global,indice_extension,L4v2,Ringer -> Epi +10,0.0255
+R,0,0.1800,global,indice_extension,L4v2,Epi +10 -> DBcAMP +10,0.0589
+R,0,0.1800,por_grupo,area_pigmentada_pct,Control,Ringer -> Epi t0,0.0356
+R,0,0.1800,por_grupo,area_pigmentada_pct,Control,Epi t0 -> Epi +15,-0.0693
+R,0,0.1800,por_grupo,area_pigmentada_pct,Control,Epi +15 -> Vehículo tf,-0.0900
+R,0,0.1800,por_grupo,area_pigmentada_pct,L2,Ringer -> Epi 10+10,-0.0071
+R,0,0.1800,por_grupo,area_pigmentada_pct,L2,Epi 10+10 -> Forsk +10,0.1491
+R,0,0.1800,por_grupo,area_pigmentada_pct,L3,Ringer -> Epi +10,-0.2725
+R,0,0.1800,por_grupo,area_pigmentada_pct,L3,Epi +10 -> Caf +15,-0.1104
+R,0,0.1800,por_grupo,area_pigmentada_pct,L4,Ringer -> Epi +10,-0.0667
+R,0,0.1800,por_grupo,area_pigmentada_pct,L4,Epi +10 -> DBcAMP+Epi +10,-0.1793
+R,0,0.1800,por_grupo,area_pigmentada_pct,L4,DBcAMP+Epi +10 -> DBcAMP +10+10,-0.0074
+R,0,0.1800,por_grupo,area_pigmentada_pct,L4v2,Ringer -> Epi +10,0.0322
+R,0,0.1800,por_grupo,area_pigmentada_pct,L4v2,Epi +10 -> DBcAMP +10,0.1597
+R,0,0.1800,por_grupo,indice_extension,Control,Ringer -> Epi t0,0.0151
+R,0,0.1800,por_grupo,indice_extension,Control,Epi t0 -> Epi +15,0.0046
+R,0,0.1800,por_grupo,indice_extension,Control,Epi +15 -> Vehículo tf,-0.0444
+R,0,0.1800,por_grupo,indice_extension,L2,Ringer -> Epi 10+10,-0.0483
+R,0,0.1800,por_grupo,indice_extension,L2,Epi 10+10 -> Forsk +10,-0.0073
+R,0,0.1800,por_grupo,indice_extension,L3,Ringer -> Epi +10,0.0428
+R,0,0.1800,por_grupo,indice_extension,L3,Epi +10 -> Caf +15,-0.1426
+R,0,0.1800,por_grupo,indice_extension,L4,Ringer -> Epi +10,-0.0227
+R,0,0.1800,por_grupo,indice_extension,L4,Epi +10 -> DBcAMP+Epi +10,0.0505
+R,0,0.1800,por_grupo,indice_extension,L4,DBcAMP+Epi +10 -> DBcAMP +10+10,-0.0010
+R,0,0.1800,por_grupo,indice_extension,L4v2,Ringer -> Epi +10,0.0255
+R,0,0.1800,por_grupo,indice_extension,L4v2,Epi +10 -> DBcAMP +10,0.0589
+R,0,0.2500,global,area_pigmentada_pct,Control,Ringer -> Epi t0,0.0369
+R,0,0.2500,global,area_pigmentada_pct,Control,Epi t0 -> Epi +15,-0.0790
+R,0,0.2500,global,area_pigmentada_pct,Control,Epi +15 -> Vehículo tf,-0.0977
+R,0,0.2500,global,area_pigmentada_pct,L2,Ringer -> Epi 10+10,0.0028
+R,0,0.2500,global,area_pigmentada_pct,L2,Epi 10+10 -> Forsk +10,0.1616
+R,0,0.2500,global,area_pigmentada_pct,L3,Ringer -> Epi +10,-0.2807
+R,0,0.2500,global,area_pigmentada_pct,L3,Epi +10 -> Caf +15,-0.0961
+R,0,0.2500,global,area_pigmentada_pct,L4,Ringer -> Epi +10,-0.0806
+R,0,0.2500,global,area_pigmentada_pct,L4,Epi +10 -> DBcAMP+Epi +10,-0.1853
+R,0,0.2500,global,area_pigmentada_pct,L4,DBcAMP+Epi +10 -> DBcAMP +10+10,-0.0065
+R,0,0.2500,global,area_pigmentada_pct,L4v2,Ringer -> Epi +10,0.0153
+R,0,0.2500,global,area_pigmentada_pct,L4v2,Epi +10 -> DBcAMP +10,0.1967
+R,0,0.2500,global,indice_extension,Control,Ringer -> Epi t0,0.0157
+R,0,0.2500,global,indice_extension,Control,Epi t0 -> Epi +15,-0.0008
+R,0,0.2500,global,indice_extension,Control,Epi +15 -> Vehículo tf,-0.0513
+R,0,0.2500,global,indice_extension,L2,Ringer -> Epi 10+10,-0.0417
+R,0,0.2500,global,indice_extension,L2,Epi 10+10 -> Forsk +10,0.0008
+R,0,0.2500,global,indice_extension,L3,Ringer -> Epi +10,0.0348
+R,0,0.2500,global,indice_extension,L3,Epi +10 -> Caf +15,-0.1354
+R,0,0.2500,global,indice_extension,L4,Ringer -> Epi +10,-0.0343
+R,0,0.2500,global,indice_extension,L4,Epi +10 -> DBcAMP+Epi +10,0.0459
+R,0,0.2500,global,indice_extension,L4,DBcAMP+Epi +10 -> DBcAMP +10+10,-0.0005
+R,0,0.2500,global,indice_extension,L4v2,Ringer -> Epi +10,0.0139
+R,0,0.2500,global,indice_extension,L4v2,Epi +10 -> DBcAMP +10,0.0840
+R,0,0.2500,por_grupo,area_pigmentada_pct,Control,Ringer -> Epi t0,0.0369
+R,0,0.2500,por_grupo,area_pigmentada_pct,Control,Epi t0 -> Epi +15,-0.0710
+R,0,0.2500,por_grupo,area_pigmentada_pct,Control,Epi +15 -> Vehículo tf,-0.0971
+R,0,0.2500,por_grupo,area_pigmentada_pct,L2,Ringer -> Epi 10+10,0.0028
+R,0,0.2500,por_grupo,area_pigmentada_pct,L2,Epi 10+10 -> Forsk +10,0.1616
+R,0,0.2500,por_grupo,area_pigmentada_pct,L3,Ringer -> Epi +10,-0.2807
+R,0,0.2500,por_grupo,area_pigmentada_pct,L3,Epi +10 -> Caf +15,-0.0961
+R,0,0.2500,por_grupo,area_pigmentada_pct,L4,Ringer -> Epi +10,-0.0806
+R,0,0.2500,por_grupo,area_pigmentada_pct,L4,Epi +10 -> DBcAMP+Epi +10,-0.1853
+R,0,0.2500,por_grupo,area_pigmentada_pct,L4,DBcAMP+Epi +10 -> DBcAMP +10+10,-0.0065
+R,0,0.2500,por_grupo,area_pigmentada_pct,L4v2,Ringer -> Epi +10,0.0153
+R,0,0.2500,por_grupo,area_pigmentada_pct,L4v2,Epi +10 -> DBcAMP +10,0.1967
+R,0,0.2500,por_grupo,indice_extension,Control,Ringer -> Epi t0,0.0157
+R,0,0.2500,por_grupo,indice_extension,Control,Epi t0 -> Epi +15,0.0034
+R,0,0.2500,por_grupo,indice_extension,Control,Epi +15 -> Vehículo tf,-0.0510
+R,0,0.2500,por_grupo,indice_extension,L2,Ringer -> Epi 10+10,-0.0417
+R,0,0.2500,por_grupo,indice_extension,L2,Epi 10+10 -> Forsk +10,0.0008
+R,0,0.2500,por_grupo,indice_extension,L3,Ringer -> Epi +10,0.0348
+R,0,0.2500,por_grupo,indice_extension,L3,Epi +10 -> Caf +15,-0.1354
+R,0,0.2500,por_grupo,indice_extension,L4,Ringer -> Epi +10,-0.0343
+R,0,0.2500,por_grupo,indice_extension,L4,Epi +10 -> DBcAMP+Epi +10,0.0459
+R,0,0.2500,por_grupo,indice_extension,L4,DBcAMP+Epi +10 -> DBcAMP +10+10,-0.0005
+R,0,0.2500,por_grupo,indice_extension,L4v2,Ringer -> Epi +10,0.0139
+R,0,0.2500,por_grupo,indice_extension,L4v2,Epi +10 -> DBcAMP +10,0.0840
+R,1,0.1200,global,area_pigmentada_pct,Control,Ringer -> Epi t0,0.0370
+R,1,0.1200,global,area_pigmentada_pct,Control,Epi t0 -> Epi +15,-0.0791
+R,1,0.1200,global,area_pigmentada_pct,Control,Epi +15 -> Vehículo tf,-0.0614
+R,1,0.1200,global,area_pigmentada_pct,L2,Ringer -> Epi 10+10,0.0031
+R,1,0.1200,global,area_pigmentada_pct,L2,Epi 10+10 -> Forsk +10,0.1213
+R,1,0.1200,global,area_pigmentada_pct,L3,Ringer -> Epi +10,-0.2782
+R,1,0.1200,global,area_pigmentada_pct,L3,Epi +10 -> Caf +15,-0.1078
+R,1,0.1200,global,area_pigmentada_pct,L4,Ringer -> Epi +10,-0.0705
+R,1,0.1200,global,area_pigmentada_pct,L4,Epi +10 -> DBcAMP+Epi +10,-0.1308
+R,1,0.1200,global,area_pigmentada_pct,L4,DBcAMP+Epi +10 -> DBcAMP +10+10,-0.0028
+R,1,0.1200,global,area_pigmentada_pct,L4v2,Ringer -> Epi +10,-0.0246
+R,1,0.1200,global,area_pigmentada_pct,L4v2,Epi +10 -> DBcAMP +10,0.1369
+R,1,0.1200,global,indice_extension,Control,Ringer -> Epi t0,0.0177
+R,1,0.1200,global,indice_extension,Control,Epi t0 -> Epi +15,0.0137
+R,1,0.1200,global,indice_extension,Control,Epi +15 -> Vehículo tf,-0.0221
+R,1,0.1200,global,indice_extension,L2,Ringer -> Epi 10+10,-0.0336
+R,1,0.1200,global,indice_extension,L2,Epi 10+10 -> Forsk +10,-0.0353
+R,1,0.1200,global,indice_extension,L3,Ringer -> Epi +10,0.0486
+R,1,0.1200,global,indice_extension,L3,Epi +10 -> Caf +15,-0.1357
+R,1,0.1200,global,indice_extension,L4,Ringer -> Epi +10,-0.0478
+R,1,0.1200,global,indice_extension,L4,Epi +10 -> DBcAMP+Epi +10,0.1031
+R,1,0.1200,global,indice_extension,L4,DBcAMP+Epi +10 -> DBcAMP +10+10,-0.0011
+R,1,0.1200,global,indice_extension,L4v2,Ringer -> Epi +10,0.0164
+R,1,0.1200,global,indice_extension,L4v2,Epi +10 -> DBcAMP +10,0.0869
+R,1,0.1200,por_grupo,area_pigmentada_pct,Control,Ringer -> Epi t0,0.0370
+R,1,0.1200,por_grupo,area_pigmentada_pct,Control,Epi t0 -> Epi +15,-0.0791
+R,1,0.1200,por_grupo,area_pigmentada_pct,Control,Epi +15 -> Vehículo tf,-0.0614
+R,1,0.1200,por_grupo,area_pigmentada_pct,L2,Ringer -> Epi 10+10,0.0031
+R,1,0.1200,por_grupo,area_pigmentada_pct,L2,Epi 10+10 -> Forsk +10,0.1213
+R,1,0.1200,por_grupo,area_pigmentada_pct,L3,Ringer -> Epi +10,-0.2782
+R,1,0.1200,por_grupo,area_pigmentada_pct,L3,Epi +10 -> Caf +15,-0.1078
+R,1,0.1200,por_grupo,area_pigmentada_pct,L4,Ringer -> Epi +10,-0.0705
+R,1,0.1200,por_grupo,area_pigmentada_pct,L4,Epi +10 -> DBcAMP+Epi +10,-0.1308
+R,1,0.1200,por_grupo,area_pigmentada_pct,L4,DBcAMP+Epi +10 -> DBcAMP +10+10,-0.0028
+R,1,0.1200,por_grupo,area_pigmentada_pct,L4v2,Ringer -> Epi +10,-0.0246
+R,1,0.1200,por_grupo,area_pigmentada_pct,L4v2,Epi +10 -> DBcAMP +10,0.1369
+R,1,0.1200,por_grupo,indice_extension,Control,Ringer -> Epi t0,0.0177
+R,1,0.1200,por_grupo,indice_extension,Control,Epi t0 -> Epi +15,0.0137
+R,1,0.1200,por_grupo,indice_extension,Control,Epi +15 -> Vehículo tf,-0.0221
+R,1,0.1200,por_grupo,indice_extension,L2,Ringer -> Epi 10+10,-0.0336
+R,1,0.1200,por_grupo,indice_extension,L2,Epi 10+10 -> Forsk +10,-0.0353
+R,1,0.1200,por_grupo,indice_extension,L3,Ringer -> Epi +10,0.0486
+R,1,0.1200,por_grupo,indice_extension,L3,Epi +10 -> Caf +15,-0.1357
+R,1,0.1200,por_grupo,indice_extension,L4,Ringer -> Epi +10,-0.0478
+R,1,0.1200,por_grupo,indice_extension,L4,Epi +10 -> DBcAMP+Epi +10,0.1031
+R,1,0.1200,por_grupo,indice_extension,L4,DBcAMP+Epi +10 -> DBcAMP +10+10,-0.0011
+R,1,0.1200,por_grupo,indice_extension,L4v2,Ringer -> Epi +10,0.0164
+R,1,0.1200,por_grupo,indice_extension,L4v2,Epi +10 -> DBcAMP +10,0.0869
+R,1,0.1800,global,area_pigmentada_pct,Control,Ringer -> Epi t0,0.0398
+R,1,0.1800,global,area_pigmentada_pct,Control,Epi t0 -> Epi +15,-0.0821
+R,1,0.1800,global,area_pigmentada_pct,Control,Epi +15 -> Vehículo tf,-0.0797
+R,1,0.1800,global,area_pigmentada_pct,L2,Ringer -> Epi 10+10,0.0065
+R,1,0.1800,global,area_pigmentada_pct,L2,Epi 10+10 -> Forsk +10,0.1392
+R,1,0.1800,global,area_pigmentada_pct,L3,Ringer -> Epi +10,-0.3006
+R,1,0.1800,global,area_pigmentada_pct,L3,Epi +10 -> Caf +15,-0.0885
+R,1,0.1800,global,area_pigmentada_pct,L4,Ringer -> Epi +10,-0.0566
+R,1,0.1800,global,area_pigmentada_pct,L4,Epi +10 -> DBcAMP+Epi +10,-0.1717
+R,1,0.1800,global,area_pigmentada_pct,L4,DBcAMP+Epi +10 -> DBcAMP +10+10,-0.0012
+R,1,0.1800,global,area_pigmentada_pct,L4v2,Ringer -> Epi +10,0.0038
+R,1,0.1800,global,area_pigmentada_pct,L4v2,Epi +10 -> DBcAMP +10,0.1579
+R,1,0.1800,global,indice_extension,Control,Ringer -> Epi t0,0.0200
+R,1,0.1800,global,indice_extension,Control,Epi t0 -> Epi +15,0.0113
+R,1,0.1800,global,indice_extension,Control,Epi +15 -> Vehículo tf,-0.0373
+R,1,0.1800,global,indice_extension,L2,Ringer -> Epi 10+10,-0.0313
+R,1,0.1800,global,indice_extension,L2,Epi 10+10 -> Forsk +10,-0.0229
+R,1,0.1800,global,indice_extension,L3,Ringer -> Epi +10,0.0235
+R,1,0.1800,global,indice_extension,L3,Epi +10 -> Caf +15,-0.1229
+R,1,0.1800,global,indice_extension,L4,Ringer -> Epi +10,-0.0366
+R,1,0.1800,global,indice_extension,L4,Epi +10 -> DBcAMP+Epi +10,0.0616
+R,1,0.1800,global,indice_extension,L4,DBcAMP+Epi +10 -> DBcAMP +10+10,0.0002
+R,1,0.1800,global,indice_extension,L4v2,Ringer -> Epi +10,0.0389
+R,1,0.1800,global,indice_extension,L4v2,Epi +10 -> DBcAMP +10,0.1037
+R,1,0.1800,por_grupo,area_pigmentada_pct,Control,Ringer -> Epi t0,0.0398
+R,1,0.1800,por_grupo,area_pigmentada_pct,Control,Epi t0 -> Epi +15,-0.0821
+R,1,0.1800,por_grupo,area_pigmentada_pct,Control,Epi +15 -> Vehículo tf,-0.0797
+R,1,0.1800,por_grupo,area_pigmentada_pct,L2,Ringer -> Epi 10+10,0.0065
+R,1,0.1800,por_grupo,area_pigmentada_pct,L2,Epi 10+10 -> Forsk +10,0.1392
+R,1,0.1800,por_grupo,area_pigmentada_pct,L3,Ringer -> Epi +10,-0.3006
+R,1,0.1800,por_grupo,area_pigmentada_pct,L3,Epi +10 -> Caf +15,-0.0885
+R,1,0.1800,por_grupo,area_pigmentada_pct,L4,Ringer -> Epi +10,-0.0566
+R,1,0.1800,por_grupo,area_pigmentada_pct,L4,Epi +10 -> DBcAMP+Epi +10,-0.1717
+R,1,0.1800,por_grupo,area_pigmentada_pct,L4,DBcAMP+Epi +10 -> DBcAMP +10+10,-0.0012
+R,1,0.1800,por_grupo,area_pigmentada_pct,L4v2,Ringer -> Epi +10,0.0038
+R,1,0.1800,por_grupo,area_pigmentada_pct,L4v2,Epi +10 -> DBcAMP +10,0.1579
+R,1,0.1800,por_grupo,indice_extension,Control,Ringer -> Epi t0,0.0200
+R,1,0.1800,por_grupo,indice_extension,Control,Epi t0 -> Epi +15,0.0113
+R,1,0.1800,por_grupo,indice_extension,Control,Epi +15 -> Vehículo tf,-0.0373
+R,1,0.1800,por_grupo,indice_extension,L2,Ringer -> Epi 10+10,-0.0313
+R,1,0.1800,por_grupo,indice_extension,L2,Epi 10+10 -> Forsk +10,-0.0229
+R,1,0.1800,por_grupo,indice_extension,L3,Ringer -> Epi +10,0.0235
+R,1,0.1800,por_grupo,indice_extension,L3,Epi +10 -> Caf +15,-0.1229
+R,1,0.1800,por_grupo,indice_extension,L4,Ringer -> Epi +10,-0.0366
+R,1,0.1800,por_grupo,indice_extension,L4,Epi +10 -> DBcAMP+Epi +10,0.0616
+R,1,0.1800,por_grupo,indice_extension,L4,DBcAMP+Epi +10 -> DBcAMP +10+10,0.0002
+R,1,0.1800,por_grupo,indice_extension,L4v2,Ringer -> Epi +10,0.0389
+R,1,0.1800,por_grupo,indice_extension,L4v2,Epi +10 -> DBcAMP +10,0.1037
+R,1,0.2500,global,area_pigmentada_pct,Control,Ringer -> Epi t0,0.0316
+R,1,0.2500,global,area_pigmentada_pct,Control,Epi t0 -> Epi +15,-0.0841
+R,1,0.2500,global,area_pigmentada_pct,Control,Epi +15 -> Vehículo tf,-0.0976
+R,1,0.2500,global,area_pigmentada_pct,L2,Ringer -> Epi 10+10,0.0081
+R,1,0.2500,global,area_pigmentada_pct,L2,Epi 10+10 -> Forsk +10,0.1603
+R,1,0.2500,global,area_pigmentada_pct,L3,Ringer -> Epi +10,-0.3557
+R,1,0.2500,global,area_pigmentada_pct,L3,Epi +10 -> Caf +15,-0.0040
+R,1,0.2500,global,area_pigmentada_pct,L4,Ringer -> Epi +10,-0.0708
+R,1,0.2500,global,area_pigmentada_pct,L4,Epi +10 -> DBcAMP+Epi +10,-0.1836
+R,1,0.2500,global,area_pigmentada_pct,L4,DBcAMP+Epi +10 -> DBcAMP +10+10,-0.0031
+R,1,0.2500,global,area_pigmentada_pct,L4v2,Ringer -> Epi +10,-0.0131
+R,1,0.2500,global,area_pigmentada_pct,L4v2,Epi +10 -> DBcAMP +10,0.1699
+R,1,0.2500,global,indice_extension,Control,Ringer -> Epi t0,0.0149
+R,1,0.2500,global,indice_extension,Control,Epi t0 -> Epi +15,0.0100
+R,1,0.2500,global,indice_extension,Control,Epi +15 -> Vehículo tf,-0.0499
+R,1,0.2500,global,indice_extension,L2,Ringer -> Epi 10+10,-0.0303
+R,1,0.2500,global,indice_extension,L2,Epi 10+10 -> Forsk +10,-0.0098
+R,1,0.2500,global,indice_extension,L3,Ringer -> Epi +10,-0.0229
+R,1,0.2500,global,indice_extension,L3,Epi +10 -> Caf +15,-0.0787
+R,1,0.2500,global,indice_extension,L4,Ringer -> Epi +10,-0.0484
+R,1,0.2500,global,indice_extension,L4,Epi +10 -> DBcAMP+Epi +10,0.0512
+R,1,0.2500,global,indice_extension,L4,DBcAMP+Epi +10 -> DBcAMP +10+10,-0.0014
+R,1,0.2500,global,indice_extension,L4v2,Ringer -> Epi +10,0.0268
+R,1,0.2500,global,indice_extension,L4v2,Epi +10 -> DBcAMP +10,0.1141
+R,1,0.2500,por_grupo,area_pigmentada_pct,Control,Ringer -> Epi t0,0.0316
+R,1,0.2500,por_grupo,area_pigmentada_pct,Control,Epi t0 -> Epi +15,-0.0841
+R,1,0.2500,por_grupo,area_pigmentada_pct,Control,Epi +15 -> Vehículo tf,-0.0867
+R,1,0.2500,por_grupo,area_pigmentada_pct,L2,Ringer -> Epi 10+10,0.0081
+R,1,0.2500,por_grupo,area_pigmentada_pct,L2,Epi 10+10 -> Forsk +10,0.1603
+R,1,0.2500,por_grupo,area_pigmentada_pct,L3,Ringer -> Epi +10,-0.3557
+R,1,0.2500,por_grupo,area_pigmentada_pct,L3,Epi +10 -> Caf +15,-0.0040
+R,1,0.2500,por_grupo,area_pigmentada_pct,L4,Ringer -> Epi +10,-0.0708
+R,1,0.2500,por_grupo,area_pigmentada_pct,L4,Epi +10 -> DBcAMP+Epi +10,-0.1836
+R,1,0.2500,por_grupo,area_pigmentada_pct,L4,DBcAMP+Epi +10 -> DBcAMP +10+10,-0.0031
+R,1,0.2500,por_grupo,area_pigmentada_pct,L4v2,Ringer -> Epi +10,-0.0131
+R,1,0.2500,por_grupo,area_pigmentada_pct,L4v2,Epi +10 -> DBcAMP +10,0.1699
+R,1,0.2500,por_grupo,indice_extension,Control,Ringer -> Epi t0,0.0149
+R,1,0.2500,por_grupo,indice_extension,Control,Epi t0 -> Epi +15,0.0100
+R,1,0.2500,por_grupo,indice_extension,Control,Epi +15 -> Vehículo tf,-0.0437
+R,1,0.2500,por_grupo,indice_extension,L2,Ringer -> Epi 10+10,-0.0303
+R,1,0.2500,por_grupo,indice_extension,L2,Epi 10+10 -> Forsk +10,-0.0098
+R,1,0.2500,por_grupo,indice_extension,L3,Ringer -> Epi +10,-0.0229
+R,1,0.2500,por_grupo,indice_extension,L3,Epi +10 -> Caf +15,-0.0787
+R,1,0.2500,por_grupo,indice_extension,L4,Ringer -> Epi +10,-0.0484
+R,1,0.2500,por_grupo,indice_extension,L4,Epi +10 -> DBcAMP+Epi +10,0.0512
+R,1,0.2500,por_grupo,indice_extension,L4,DBcAMP+Epi +10 -> DBcAMP +10+10,-0.0014
+R,1,0.2500,por_grupo,indice_extension,L4v2,Ringer -> Epi +10,0.0268
+R,1,0.2500,por_grupo,indice_extension,L4v2,Epi +10 -> DBcAMP +10,0.1141
+lum,0,0.1200,global,area_pigmentada_pct,Control,Ringer -> Epi t0,0.0417
+lum,0,0.1200,global,area_pigmentada_pct,Control,Epi t0 -> Epi +15,-0.0756
+lum,0,0.1200,global,area_pigmentada_pct,Control,Epi +15 -> Vehículo tf,-0.0718
+lum,0,0.1200,global,area_pigmentada_pct,L2,Ringer -> Epi 10+10,-0.0271
+lum,0,0.1200,global,area_pigmentada_pct,L2,Epi 10+10 -> Forsk +10,0.1321
+lum,0,0.1200,global,area_pigmentada_pct,L3,Ringer -> Epi +10,-0.1539
+lum,0,0.1200,global,area_pigmentada_pct,L3,Epi +10 -> Caf +15,-0.1513
+lum,0,0.1200,global,area_pigmentada_pct,L4,Ringer -> Epi +10,-0.0883
+lum,0,0.1200,global,area_pigmentada_pct,L4,Epi +10 -> DBcAMP+Epi +10,-0.1257
+lum,0,0.1200,global,area_pigmentada_pct,L4,DBcAMP+Epi +10 -> DBcAMP +10+10,-0.0104
+lum,0,0.1200,global,area_pigmentada_pct,L4v2,Ringer -> Epi +10,-0.0247
+lum,0,0.1200,global,area_pigmentada_pct,L4v2,Epi +10 -> DBcAMP +10,0.1530
+lum,0,0.1200,global,indice_extension,Control,Ringer -> Epi t0,0.0244
+lum,0,0.1200,global,indice_extension,Control,Epi t0 -> Epi +15,0.0065
+lum,0,0.1200,global,indice_extension,Control,Epi +15 -> Vehículo tf,0.0091
+lum,0,0.1200,global,indice_extension,L2,Ringer -> Epi 10+10,-0.0236
+lum,0,0.1200,global,indice_extension,L2,Epi 10+10 -> Forsk +10,-0.0275
+lum,0,0.1200,global,indice_extension,L3,Ringer -> Epi +10,0.1462
+lum,0,0.1200,global,indice_extension,L3,Epi +10 -> Caf +15,-0.0677
+lum,0,0.1200,global,indice_extension,L4,Ringer -> Epi +10,-0.0294
+lum,0,0.1200,global,indice_extension,L4,Epi +10 -> DBcAMP+Epi +10,0.1150
+lum,0,0.1200,global,indice_extension,L4,DBcAMP+Epi +10 -> DBcAMP +10+10,-0.0028
+lum,0,0.1200,global,indice_extension,L4v2,Ringer -> Epi +10,0.0036
+lum,0,0.1200,global,indice_extension,L4v2,Epi +10 -> DBcAMP +10,0.0428
+lum,0,0.1200,por_grupo,area_pigmentada_pct,Control,Ringer -> Epi t0,0.0417
+lum,0,0.1200,por_grupo,area_pigmentada_pct,Control,Epi t0 -> Epi +15,-0.0756
+lum,0,0.1200,por_grupo,area_pigmentada_pct,Control,Epi +15 -> Vehículo tf,-0.0718
+lum,0,0.1200,por_grupo,area_pigmentada_pct,L2,Ringer -> Epi 10+10,-0.0271
+lum,0,0.1200,por_grupo,area_pigmentada_pct,L2,Epi 10+10 -> Forsk +10,0.1321
+lum,0,0.1200,por_grupo,area_pigmentada_pct,L3,Ringer -> Epi +10,-0.1539
+lum,0,0.1200,por_grupo,area_pigmentada_pct,L3,Epi +10 -> Caf +15,-0.1513
+lum,0,0.1200,por_grupo,area_pigmentada_pct,L4,Ringer -> Epi +10,-0.0883
+lum,0,0.1200,por_grupo,area_pigmentada_pct,L4,Epi +10 -> DBcAMP+Epi +10,-0.1257
+lum,0,0.1200,por_grupo,area_pigmentada_pct,L4,DBcAMP+Epi +10 -> DBcAMP +10+10,-0.0104
+lum,0,0.1200,por_grupo,area_pigmentada_pct,L4v2,Ringer -> Epi +10,-0.0247
+lum,0,0.1200,por_grupo,area_pigmentada_pct,L4v2,Epi +10 -> DBcAMP +10,0.1530
+lum,0,0.1200,por_grupo,indice_extension,Control,Ringer -> Epi t0,0.0244
+lum,0,0.1200,por_grupo,indice_extension,Control,Epi t0 -> Epi +15,0.0065
+lum,0,0.1200,por_grupo,indice_extension,Control,Epi +15 -> Vehículo tf,0.0091
+lum,0,0.1200,por_grupo,indice_extension,L2,Ringer -> Epi 10+10,-0.0236
+lum,0,0.1200,por_grupo,indice_extension,L2,Epi 10+10 -> Forsk +10,-0.0275
+lum,0,0.1200,por_grupo,indice_extension,L3,Ringer -> Epi +10,0.1462
+lum,0,0.1200,por_grupo,indice_extension,L3,Epi +10 -> Caf +15,-0.0677
+lum,0,0.1200,por_grupo,indice_extension,L4,Ringer -> Epi +10,-0.0294
+lum,0,0.1200,por_grupo,indice_extension,L4,Epi +10 -> DBcAMP+Epi +10,0.1150
+lum,0,0.1200,por_grupo,indice_extension,L4,DBcAMP+Epi +10 -> DBcAMP +10+10,-0.0028
+lum,0,0.1200,por_grupo,indice_extension,L4v2,Ringer -> Epi +10,0.0036
+lum,0,0.1200,por_grupo,indice_extension,L4v2,Epi +10 -> DBcAMP +10,0.0428
+lum,0,0.1800,global,area_pigmentada_pct,Control,Ringer -> Epi t0,0.0455
+lum,0,0.1800,global,area_pigmentada_pct,Control,Epi t0 -> Epi +15,-0.0876
+lum,0,0.1800,global,area_pigmentada_pct,Control,Epi +15 -> Vehículo tf,-0.0855
+lum,0,0.1800,global,area_pigmentada_pct,L2,Ringer -> Epi 10+10,-0.0173
+lum,0,0.1800,global,area_pigmentada_pct,L2,Epi 10+10 -> Forsk +10,0.1496
+lum,0,0.1800,global,area_pigmentada_pct,L3,Ringer -> Epi +10,-0.2493
+lum,0,0.1800,global,area_pigmentada_pct,L3,Epi +10 -> Caf +15,-0.1192
+lum,0,0.1800,global,area_pigmentada_pct,L4,Ringer -> Epi +10,-0.0767
+lum,0,0.1800,global,area_pigmentada_pct,L4,Epi +10 -> DBcAMP+Epi +10,-0.1681
+lum,0,0.1800,global,area_pigmentada_pct,L4,DBcAMP+Epi +10 -> DBcAMP +10+10,-0.0150
+lum,0,0.1800,global,area_pigmentada_pct,L4v2,Ringer -> Epi +10,-0.0102
+lum,0,0.1800,global,area_pigmentada_pct,L4v2,Epi +10 -> DBcAMP +10,0.1747
+lum,0,0.1800,global,indice_extension,Control,Ringer -> Epi t0,0.0277
+lum,0,0.1800,global,indice_extension,Control,Epi t0 -> Epi +15,-0.0019
+lum,0,0.1800,global,indice_extension,Control,Epi +15 -> Vehículo tf,-0.0023
+lum,0,0.1800,global,indice_extension,L2,Ringer -> Epi 10+10,-0.0160
+lum,0,0.1800,global,indice_extension,L2,Epi 10+10 -> Forsk +10,-0.0154
+lum,0,0.1800,global,indice_extension,L3,Ringer -> Epi +10,0.0472
+lum,0,0.1800,global,indice_extension,L3,Epi +10 -> Caf +15,-0.0428
+lum,0,0.1800,global,indice_extension,L4,Ringer -> Epi +10,-0.0199
+lum,0,0.1800,global,indice_extension,L4,Epi +10 -> DBcAMP+Epi +10,0.0720
+lum,0,0.1800,global,indice_extension,L4,DBcAMP+Epi +10 -> DBcAMP +10+10,-0.0065
+lum,0,0.1800,global,indice_extension,L4v2,Ringer -> Epi +10,0.0156
+lum,0,0.1800,global,indice_extension,L4v2,Epi +10 -> DBcAMP +10,0.0589
+lum,0,0.1800,por_grupo,area_pigmentada_pct,Control,Ringer -> Epi t0,0.0455
+lum,0,0.1800,por_grupo,area_pigmentada_pct,Control,Epi t0 -> Epi +15,-0.0798
+lum,0,0.1800,por_grupo,area_pigmentada_pct,Control,Epi +15 -> Vehículo tf,-0.0932
+lum,0,0.1800,por_grupo,area_pigmentada_pct,L2,Ringer -> Epi 10+10,-0.0173
+lum,0,0.1800,por_grupo,area_pigmentada_pct,L2,Epi 10+10 -> Forsk +10,0.1496
+lum,0,0.1800,por_grupo,area_pigmentada_pct,L3,Ringer -> Epi +10,-0.2483
+lum,0,0.1800,por_grupo,area_pigmentada_pct,L3,Epi +10 -> Caf +15,-0.1203
+lum,0,0.1800,por_grupo,area_pigmentada_pct,L4,Ringer -> Epi +10,-0.0767
+lum,0,0.1800,por_grupo,area_pigmentada_pct,L4,Epi +10 -> DBcAMP+Epi +10,-0.1681
+lum,0,0.1800,por_grupo,area_pigmentada_pct,L4,DBcAMP+Epi +10 -> DBcAMP +10+10,-0.0150
+lum,0,0.1800,por_grupo,area_pigmentada_pct,L4v2,Ringer -> Epi +10,-0.0102
+lum,0,0.1800,por_grupo,area_pigmentada_pct,L4v2,Epi +10 -> DBcAMP +10,0.1747
+lum,0,0.1800,por_grupo,indice_extension,Control,Ringer -> Epi t0,0.0277
+lum,0,0.1800,por_grupo,indice_extension,Control,Epi t0 -> Epi +15,0.0031
+lum,0,0.1800,por_grupo,indice_extension,Control,Epi +15 -> Vehículo tf,-0.0073
+lum,0,0.1800,por_grupo,indice_extension,L2,Ringer -> Epi 10+10,-0.0160
+lum,0,0.1800,por_grupo,indice_extension,L2,Epi 10+10 -> Forsk +10,-0.0154
+lum,0,0.1800,por_grupo,indice_extension,L3,Ringer -> Epi +10,0.0480
+lum,0,0.1800,por_grupo,indice_extension,L3,Epi +10 -> Caf +15,-0.0434
+lum,0,0.1800,por_grupo,indice_extension,L4,Ringer -> Epi +10,-0.0199
+lum,0,0.1800,por_grupo,indice_extension,L4,Epi +10 -> DBcAMP+Epi +10,0.0720
+lum,0,0.1800,por_grupo,indice_extension,L4,DBcAMP+Epi +10 -> DBcAMP +10+10,-0.0065
+lum,0,0.1800,por_grupo,indice_extension,L4v2,Ringer -> Epi +10,0.0156
+lum,0,0.1800,por_grupo,indice_extension,L4v2,Epi +10 -> DBcAMP +10,0.0589
+lum,0,0.2500,global,area_pigmentada_pct,Control,Ringer -> Epi t0,0.0345
+lum,0,0.2500,global,area_pigmentada_pct,Control,Epi t0 -> Epi +15,-0.0856
+lum,0,0.2500,global,area_pigmentada_pct,Control,Epi +15 -> Vehículo tf,-0.0965
+lum,0,0.2500,global,area_pigmentada_pct,L2,Ringer -> Epi 10+10,-0.0084
+lum,0,0.2500,global,area_pigmentada_pct,L2,Epi 10+10 -> Forsk +10,0.1647
+lum,0,0.2500,global,area_pigmentada_pct,L3,Ringer -> Epi +10,-0.2766
+lum,0,0.2500,global,area_pigmentada_pct,L3,Epi +10 -> Caf +15,-0.1097
+lum,0,0.2500,global,area_pigmentada_pct,L4,Ringer -> Epi +10,-0.0912
+lum,0,0.2500,global,area_pigmentada_pct,L4,Epi +10 -> DBcAMP+Epi +10,-0.1836
+lum,0,0.2500,global,area_pigmentada_pct,L4,DBcAMP+Epi +10 -> DBcAMP +10+10,-0.0070
+lum,0,0.2500,global,area_pigmentada_pct,L4v2,Ringer -> Epi +10,-0.0003
+lum,0,0.2500,global,area_pigmentada_pct,L4v2,Epi +10 -> DBcAMP +10,0.2034
+lum,0,0.2500,global,indice_extension,Control,Ringer -> Epi t0,0.0208
+lum,0,0.2500,global,indice_extension,Control,Epi t0 -> Epi +15,-0.0000
+lum,0,0.2500,global,indice_extension,Control,Epi +15 -> Vehículo tf,-0.0115
+lum,0,0.2500,global,indice_extension,L2,Ringer -> Epi 10+10,-0.0094
+lum,0,0.2500,global,indice_extension,L2,Epi 10+10 -> Forsk +10,-0.0057
+lum,0,0.2500,global,indice_extension,L3,Ringer -> Epi +10,0.0197
+lum,0,0.2500,global,indice_extension,L3,Epi +10 -> Caf +15,-0.0357
+lum,0,0.2500,global,indice_extension,L4,Ringer -> Epi +10,-0.0322
+lum,0,0.2500,global,indice_extension,L4,Epi +10 -> DBcAMP+Epi +10,0.0581
+lum,0,0.2500,global,indice_extension,L4,DBcAMP+Epi +10 -> DBcAMP +10+10,-0.0006
+lum,0,0.2500,global,indice_extension,L4v2,Ringer -> Epi +10,0.0227
+lum,0,0.2500,global,indice_extension,L4v2,Epi +10 -> DBcAMP +10,0.0784
+lum,0,0.2500,por_grupo,area_pigmentada_pct,Control,Ringer -> Epi t0,0.0345
+lum,0,0.2500,por_grupo,area_pigmentada_pct,Control,Epi t0 -> Epi +15,-0.0809
+lum,0,0.2500,por_grupo,area_pigmentada_pct,Control,Epi +15 -> Vehículo tf,-0.1011
+lum,0,0.2500,por_grupo,area_pigmentada_pct,L2,Ringer -> Epi 10+10,-0.0084
+lum,0,0.2500,por_grupo,area_pigmentada_pct,L2,Epi 10+10 -> Forsk +10,0.1647
+lum,0,0.2500,por_grupo,area_pigmentada_pct,L3,Ringer -> Epi +10,-0.2758
+lum,0,0.2500,por_grupo,area_pigmentada_pct,L3,Epi +10 -> Caf +15,-0.1106
+lum,0,0.2500,por_grupo,area_pigmentada_pct,L4,Ringer -> Epi +10,-0.0912
+lum,0,0.2500,por_grupo,area_pigmentada_pct,L4,Epi +10 -> DBcAMP+Epi +10,-0.1836
+lum,0,0.2500,por_grupo,area_pigmentada_pct,L4,DBcAMP+Epi +10 -> DBcAMP +10+10,-0.0070
+lum,0,0.2500,por_grupo,area_pigmentada_pct,L4v2,Ringer -> Epi +10,-0.0003
+lum,0,0.2500,por_grupo,area_pigmentada_pct,L4v2,Epi +10 -> DBcAMP +10,0.2034
+lum,0,0.2500,por_grupo,indice_extension,Control,Ringer -> Epi t0,0.0208
+lum,0,0.2500,por_grupo,indice_extension,Control,Epi t0 -> Epi +15,0.0027
+lum,0,0.2500,por_grupo,indice_extension,Control,Epi +15 -> Vehículo tf,-0.0141
+lum,0,0.2500,por_grupo,indice_extension,L2,Ringer -> Epi 10+10,-0.0094
+lum,0,0.2500,por_grupo,indice_extension,L2,Epi 10+10 -> Forsk +10,-0.0057
+lum,0,0.2500,por_grupo,indice_extension,L3,Ringer -> Epi +10,0.0202
+lum,0,0.2500,por_grupo,indice_extension,L3,Epi +10 -> Caf +15,-0.0362
+lum,0,0.2500,por_grupo,indice_extension,L4,Ringer -> Epi +10,-0.0322
+lum,0,0.2500,por_grupo,indice_extension,L4,Epi +10 -> DBcAMP+Epi +10,0.0581
+lum,0,0.2500,por_grupo,indice_extension,L4,DBcAMP+Epi +10 -> DBcAMP +10+10,-0.0006
+lum,0,0.2500,por_grupo,indice_extension,L4v2,Ringer -> Epi +10,0.0227
+lum,0,0.2500,por_grupo,indice_extension,L4v2,Epi +10 -> DBcAMP +10,0.0784
+lum,1,0.1200,global,area_pigmentada_pct,Control,Ringer -> Epi t0,0.0432
+lum,1,0.1200,global,area_pigmentada_pct,Control,Epi t0 -> Epi +15,-0.0779
+lum,1,0.1200,global,area_pigmentada_pct,Control,Epi +15 -> Vehículo tf,-0.0686
+lum,1,0.1200,global,area_pigmentada_pct,L2,Ringer -> Epi 10+10,0.0007
+lum,1,0.1200,global,area_pigmentada_pct,L2,Epi 10+10 -> Forsk +10,0.1337
+lum,1,0.1200,global,area_pigmentada_pct,L3,Ringer -> Epi +10,-0.2618
+lum,1,0.1200,global,area_pigmentada_pct,L3,Epi +10 -> Caf +15,-0.1255
+lum,1,0.1200,global,area_pigmentada_pct,L4,Ringer -> Epi +10,-0.0791
+lum,1,0.1200,global,area_pigmentada_pct,L4,Epi +10 -> DBcAMP+Epi +10,-0.1253
+lum,1,0.1200,global,area_pigmentada_pct,L4,DBcAMP+Epi +10 -> DBcAMP +10+10,-0.0089
+lum,1,0.1200,global,area_pigmentada_pct,L4v2,Ringer -> Epi +10,-0.0476
+lum,1,0.1200,global,area_pigmentada_pct,L4v2,Epi +10 -> DBcAMP +10,0.1560
+lum,1,0.1200,global,indice_extension,Control,Ringer -> Epi t0,0.0258
+lum,1,0.1200,global,indice_extension,Control,Epi t0 -> Epi +15,0.0134
+lum,1,0.1200,global,indice_extension,Control,Epi +15 -> Vehículo tf,0.0211
+lum,1,0.1200,global,indice_extension,L2,Ringer -> Epi 10+10,-0.0009
+lum,1,0.1200,global,indice_extension,L2,Epi 10+10 -> Forsk +10,-0.0378
+lum,1,0.1200,global,indice_extension,L3,Ringer -> Epi +10,0.0526
+lum,1,0.1200,global,indice_extension,L3,Epi +10 -> Caf +15,-0.0365
+lum,1,0.1200,global,indice_extension,L4,Ringer -> Epi +10,-0.0453
+lum,1,0.1200,global,indice_extension,L4,Epi +10 -> DBcAMP+Epi +10,0.1236
+lum,1,0.1200,global,indice_extension,L4,DBcAMP+Epi +10 -> DBcAMP +10+10,-0.0046
+lum,1,0.1200,global,indice_extension,L4v2,Ringer -> Epi +10,0.0136
+lum,1,0.1200,global,indice_extension,L4v2,Epi +10 -> DBcAMP +10,0.1024
+lum,1,0.1200,por_grupo,area_pigmentada_pct,Control,Ringer -> Epi t0,0.0432
+lum,1,0.1200,por_grupo,area_pigmentada_pct,Control,Epi t0 -> Epi +15,-0.0779
+lum,1,0.1200,por_grupo,area_pigmentada_pct,Control,Epi +15 -> Vehículo tf,-0.0686
+lum,1,0.1200,por_grupo,area_pigmentada_pct,L2,Ringer -> Epi 10+10,0.0007
+lum,1,0.1200,por_grupo,area_pigmentada_pct,L2,Epi 10+10 -> Forsk +10,0.1337
+lum,1,0.1200,por_grupo,area_pigmentada_pct,L3,Ringer -> Epi +10,-0.2618
+lum,1,0.1200,por_grupo,area_pigmentada_pct,L3,Epi +10 -> Caf +15,-0.1255
+lum,1,0.1200,por_grupo,area_pigmentada_pct,L4,Ringer -> Epi +10,-0.0791
+lum,1,0.1200,por_grupo,area_pigmentada_pct,L4,Epi +10 -> DBcAMP+Epi +10,-0.1253
+lum,1,0.1200,por_grupo,area_pigmentada_pct,L4,DBcAMP+Epi +10 -> DBcAMP +10+10,-0.0089
+lum,1,0.1200,por_grupo,area_pigmentada_pct,L4v2,Ringer -> Epi +10,-0.0476
+lum,1,0.1200,por_grupo,area_pigmentada_pct,L4v2,Epi +10 -> DBcAMP +10,0.1560
+lum,1,0.1200,por_grupo,indice_extension,Control,Ringer -> Epi t0,0.0258
+lum,1,0.1200,por_grupo,indice_extension,Control,Epi t0 -> Epi +15,0.0134
+lum,1,0.1200,por_grupo,indice_extension,Control,Epi +15 -> Vehículo tf,0.0211
+lum,1,0.1200,por_grupo,indice_extension,L2,Ringer -> Epi 10+10,-0.0009
+lum,1,0.1200,por_grupo,indice_extension,L2,Epi 10+10 -> Forsk +10,-0.0378
+lum,1,0.1200,por_grupo,indice_extension,L3,Ringer -> Epi +10,0.0526
+lum,1,0.1200,por_grupo,indice_extension,L3,Epi +10 -> Caf +15,-0.0365
+lum,1,0.1200,por_grupo,indice_extension,L4,Ringer -> Epi +10,-0.0453
+lum,1,0.1200,por_grupo,indice_extension,L4,Epi +10 -> DBcAMP+Epi +10,0.1236
+lum,1,0.1200,por_grupo,indice_extension,L4,DBcAMP+Epi +10 -> DBcAMP +10+10,-0.0046
+lum,1,0.1200,por_grupo,indice_extension,L4v2,Ringer -> Epi +10,0.0136
+lum,1,0.1200,por_grupo,indice_extension,L4v2,Epi +10 -> DBcAMP +10,0.1024
+lum,1,0.1800,global,area_pigmentada_pct,Control,Ringer -> Epi t0,0.0494
+lum,1,0.1800,global,area_pigmentada_pct,Control,Epi t0 -> Epi +15,-0.0831
+lum,1,0.1800,global,area_pigmentada_pct,Control,Epi +15 -> Vehículo tf,-0.1009
+lum,1,0.1800,global,area_pigmentada_pct,L2,Ringer -> Epi 10+10,-0.0062
+lum,1,0.1800,global,area_pigmentada_pct,L2,Epi 10+10 -> Forsk +10,0.1577
+lum,1,0.1800,global,area_pigmentada_pct,L3,Ringer -> Epi +10,-0.2871
+lum,1,0.1800,global,area_pigmentada_pct,L3,Epi +10 -> Caf +15,-0.0979
+lum,1,0.1800,global,area_pigmentada_pct,L4,Ringer -> Epi +10,-0.0659
+lum,1,0.1800,global,area_pigmentada_pct,L4,Epi +10 -> DBcAMP+Epi +10,-0.1638
+lum,1,0.1800,global,area_pigmentada_pct,L4,DBcAMP+Epi +10 -> DBcAMP +10+10,-0.0049
+lum,1,0.1800,global,area_pigmentada_pct,L4v2,Ringer -> Epi +10,-0.0275
+lum,1,0.1800,global,area_pigmentada_pct,L4v2,Epi +10 -> DBcAMP +10,0.1711
+lum,1,0.1800,global,indice_extension,Control,Ringer -> Epi t0,0.0307
+lum,1,0.1800,global,indice_extension,Control,Epi t0 -> Epi +15,0.0090
+lum,1,0.1800,global,indice_extension,Control,Epi +15 -> Vehículo tf,-0.0029
+lum,1,0.1800,global,indice_extension,L2,Ringer -> Epi 10+10,-0.0058
+lum,1,0.1800,global,indice_extension,L2,Epi 10+10 -> Forsk +10,-0.0221
+lum,1,0.1800,global,indice_extension,L3,Ringer -> Epi +10,0.0246
+lum,1,0.1800,global,indice_extension,L3,Epi +10 -> Caf +15,-0.0134
+lum,1,0.1800,global,indice_extension,L4,Ringer -> Epi +10,-0.0351
+lum,1,0.1800,global,indice_extension,L4,Epi +10 -> DBcAMP+Epi +10,0.0845
+lum,1,0.1800,global,indice_extension,L4,DBcAMP+Epi +10 -> DBcAMP +10+10,-0.0015
+lum,1,0.1800,global,indice_extension,L4v2,Ringer -> Epi +10,0.0294
+lum,1,0.1800,global,indice_extension,L4v2,Epi +10 -> DBcAMP +10,0.1151
+lum,1,0.1800,por_grupo,area_pigmentada_pct,Control,Ringer -> Epi t0,0.0494
+lum,1,0.1800,por_grupo,area_pigmentada_pct,Control,Epi t0 -> Epi +15,-0.0831
+lum,1,0.1800,por_grupo,area_pigmentada_pct,Control,Epi +15 -> Vehículo tf,-0.1009
+lum,1,0.1800,por_grupo,area_pigmentada_pct,L2,Ringer -> Epi 10+10,-0.0062
+lum,1,0.1800,por_grupo,area_pigmentada_pct,L2,Epi 10+10 -> Forsk +10,0.1577
+lum,1,0.1800,por_grupo,area_pigmentada_pct,L3,Ringer -> Epi +10,-0.2871
+lum,1,0.1800,por_grupo,area_pigmentada_pct,L3,Epi +10 -> Caf +15,-0.0979
+lum,1,0.1800,por_grupo,area_pigmentada_pct,L4,Ringer -> Epi +10,-0.0659
+lum,1,0.1800,por_grupo,area_pigmentada_pct,L4,Epi +10 -> DBcAMP+Epi +10,-0.1638
+lum,1,0.1800,por_grupo,area_pigmentada_pct,L4,DBcAMP+Epi +10 -> DBcAMP +10+10,-0.0049
+lum,1,0.1800,por_grupo,area_pigmentada_pct,L4v2,Ringer -> Epi +10,-0.0275
+lum,1,0.1800,por_grupo,area_pigmentada_pct,L4v2,Epi +10 -> DBcAMP +10,0.1711
+lum,1,0.1800,por_grupo,indice_extension,Control,Ringer -> Epi t0,0.0307
+lum,1,0.1800,por_grupo,indice_extension,Control,Epi t0 -> Epi +15,0.0090
+lum,1,0.1800,por_grupo,indice_extension,Control,Epi +15 -> Vehículo tf,-0.0029
+lum,1,0.1800,por_grupo,indice_extension,L2,Ringer -> Epi 10+10,-0.0058
+lum,1,0.1800,por_grupo,indice_extension,L2,Epi 10+10 -> Forsk +10,-0.0221
+lum,1,0.1800,por_grupo,indice_extension,L3,Ringer -> Epi +10,0.0246
+lum,1,0.1800,por_grupo,indice_extension,L3,Epi +10 -> Caf +15,-0.0134
+lum,1,0.1800,por_grupo,indice_extension,L4,Ringer -> Epi +10,-0.0351
+lum,1,0.1800,por_grupo,indice_extension,L4,Epi +10 -> DBcAMP+Epi +10,0.0845
+lum,1,0.1800,por_grupo,indice_extension,L4,DBcAMP+Epi +10 -> DBcAMP +10+10,-0.0015
+lum,1,0.1800,por_grupo,indice_extension,L4v2,Ringer -> Epi +10,0.0294
+lum,1,0.1800,por_grupo,indice_extension,L4v2,Epi +10 -> DBcAMP +10,0.1151
+lum,1,0.2500,global,area_pigmentada_pct,Control,Ringer -> Epi t0,0.0431
+lum,1,0.2500,global,area_pigmentada_pct,Control,Epi t0 -> Epi +15,-0.0851
+lum,1,0.2500,global,area_pigmentada_pct,Control,Epi +15 -> Vehículo tf,-0.1005
+lum,1,0.2500,global,area_pigmentada_pct,L2,Ringer -> Epi 10+10,0.0032
+lum,1,0.2500,global,area_pigmentada_pct,L2,Epi 10+10 -> Forsk +10,0.1647
+lum,1,0.2500,global,area_pigmentada_pct,L3,Ringer -> Epi +10,-0.3557
+lum,1,0.2500,global,area_pigmentada_pct,L3,Epi +10 -> Caf +15,-0.0257
+lum,1,0.2500,global,area_pigmentada_pct,L4,Ringer -> Epi +10,-0.0859
+lum,1,0.2500,global,area_pigmentada_pct,L4,Epi +10 -> DBcAMP+Epi +10,-0.1798
+lum,1,0.2500,global,area_pigmentada_pct,L4,DBcAMP+Epi +10 -> DBcAMP +10+10,-0.0039
+lum,1,0.2500,global,area_pigmentada_pct,L4v2,Ringer -> Epi +10,-0.0332
+lum,1,0.2500,global,area_pigmentada_pct,L4v2,Epi +10 -> DBcAMP +10,0.1979
+lum,1,0.2500,global,indice_extension,Control,Ringer -> Epi t0,0.0267
+lum,1,0.2500,global,indice_extension,Control,Epi t0 -> Epi +15,0.0078
+lum,1,0.2500,global,indice_extension,Control,Epi +15 -> Vehículo tf,-0.0030
+lum,1,0.2500,global,indice_extension,L2,Ringer -> Epi 10+10,0.0011
+lum,1,0.2500,global,indice_extension,L2,Epi 10+10 -> Forsk +10,-0.0178
+lum,1,0.2500,global,indice_extension,L3,Ringer -> Epi +10,-0.0390
+lum,1,0.2500,global,indice_extension,L3,Epi +10 -> Caf +15,0.0336
+lum,1,0.2500,global,indice_extension,L4,Ringer -> Epi +10,-0.0513
+lum,1,0.2500,global,indice_extension,L4,Epi +10 -> DBcAMP+Epi +10,0.0699
+lum,1,0.2500,global,indice_extension,L4,DBcAMP+Epi +10 -> DBcAMP +10+10,-0.0010
+lum,1,0.2500,global,indice_extension,L4v2,Ringer -> Epi +10,0.0259
+lum,1,0.2500,global,indice_extension,L4v2,Epi +10 -> DBcAMP +10,0.1353
+lum,1,0.2500,por_grupo,area_pigmentada_pct,Control,Ringer -> Epi t0,0.0431
+lum,1,0.2500,por_grupo,area_pigmentada_pct,Control,Epi t0 -> Epi +15,-0.0851
+lum,1,0.2500,por_grupo,area_pigmentada_pct,Control,Epi +15 -> Vehículo tf,-0.1005
+lum,1,0.2500,por_grupo,area_pigmentada_pct,L2,Ringer -> Epi 10+10,0.0032
+lum,1,0.2500,por_grupo,area_pigmentada_pct,L2,Epi 10+10 -> Forsk +10,0.1647
+lum,1,0.2500,por_grupo,area_pigmentada_pct,L3,Ringer -> Epi +10,-0.3557
+lum,1,0.2500,por_grupo,area_pigmentada_pct,L3,Epi +10 -> Caf +15,-0.0257
+lum,1,0.2500,por_grupo,area_pigmentada_pct,L4,Ringer -> Epi +10,-0.0859
+lum,1,0.2500,por_grupo,area_pigmentada_pct,L4,Epi +10 -> DBcAMP+Epi +10,-0.1798
+lum,1,0.2500,por_grupo,area_pigmentada_pct,L4,DBcAMP+Epi +10 -> DBcAMP +10+10,-0.0039
+lum,1,0.2500,por_grupo,area_pigmentada_pct,L4v2,Ringer -> Epi +10,-0.0332
+lum,1,0.2500,por_grupo,area_pigmentada_pct,L4v2,Epi +10 -> DBcAMP +10,0.1979
+lum,1,0.2500,por_grupo,indice_extension,Control,Ringer -> Epi t0,0.0267
+lum,1,0.2500,por_grupo,indice_extension,Control,Epi t0 -> Epi +15,0.0078
+lum,1,0.2500,por_grupo,indice_extension,Control,Epi +15 -> Vehículo tf,-0.0030
+lum,1,0.2500,por_grupo,indice_extension,L2,Ringer -> Epi 10+10,0.0011
+lum,1,0.2500,por_grupo,indice_extension,L2,Epi 10+10 -> Forsk +10,-0.0178
+lum,1,0.2500,por_grupo,indice_extension,L3,Ringer -> Epi +10,-0.0390
+lum,1,0.2500,por_grupo,indice_extension,L3,Epi +10 -> Caf +15,0.0336
+lum,1,0.2500,por_grupo,indice_extension,L4,Ringer -> Epi +10,-0.0513
+lum,1,0.2500,por_grupo,indice_extension,L4,Epi +10 -> DBcAMP+Epi +10,0.0699
+lum,1,0.2500,por_grupo,indice_extension,L4,DBcAMP+Epi +10 -> DBcAMP +10+10,-0.0010
+lum,1,0.2500,por_grupo,indice_extension,L4v2,Ringer -> Epi +10,0.0259
+lum,1,0.2500,por_grupo,indice_extension,L4v2,Epi +10 -> DBcAMP +10,0.1353

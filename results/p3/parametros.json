@@ -1,0 +1,12 @@
+{
+  "blur_sigma": 1.0,
+  "bg_order": 0,
+  "low_thr": 0.18,
+  "min_object_px": 15,
+  "tile_px": 64,
+  "channel": "R",
+  "seed_thr": -1.0,
+  "alpha_min": 200,
+  "erode_px": 2,
+  "umbral_semilla_global": 0.556640625
+}

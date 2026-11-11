@@ -1,0 +1,25 @@
+metrica,grupo,paso,mediana,minimo,maximo,frac_positivo
+area_pigmentada_pct,Control,Ringer -> Epi t0,0.041,0.032,0.049,1.000
+area_pigmentada_pct,Control,Epi t0 -> Epi +15,-0.079,-0.088,-0.061,0.000
+area_pigmentada_pct,Control,Epi +15 -> Vehículo tf,-0.088,-0.101,-0.061,0.000
+area_pigmentada_pct,L2,Ringer -> Epi 10+10,-0.002,-0.027,0.008,0.500
+area_pigmentada_pct,L2,Epi 10+10 -> Forsk +10,0.149,0.118,0.165,1.000
+area_pigmentada_pct,L3,Ringer -> Epi +10,-0.277,-0.356,-0.154,0.000
+area_pigmentada_pct,L3,Epi +10 -> Caf +15,-0.109,-0.151,-0.004,0.000
+area_pigmentada_pct,L4,Ringer -> Epi +10,-0.077,-0.091,-0.057,0.000
+area_pigmentada_pct,L4,Epi +10 -> DBcAMP+Epi +10,-0.170,-0.185,-0.125,0.000
+area_pigmentada_pct,L4,DBcAMP+Epi +10 -> DBcAMP +10+10,-0.007,-0.015,-0.001,0.000
+area_pigmentada_pct,L4v2,Ringer -> Epi +10,-0.012,-0.048,0.032,0.333
+area_pigmentada_pct,L4v2,Epi +10 -> DBcAMP +10,0.165,0.135,0.203,1.000
+indice_extension,Control,Ringer -> Epi t0,0.020,0.015,0.031,1.000
+indice_extension,Control,Epi t0 -> Epi +15,0.008,-0.002,0.014,0.833
+indice_extension,Control,Epi +15 -> Vehículo tf,-0.018,-0.051,0.021,0.167
+indice_extension,L2,Ringer -> Epi 10+10,-0.027,-0.048,0.001,0.083
+indice_extension,L2,Epi 10+10 -> Forsk +10,-0.020,-0.038,0.001,0.083
+indice_extension,L3,Ringer -> Epi +10,0.039,-0.039,0.150,0.833
+indice_extension,L3,Epi +10 -> Caf +15,-0.073,-0.167,0.034,0.083
+indice_extension,L4,Ringer -> Epi +10,-0.035,-0.051,-0.020,0.000
+indice_extension,L4,Epi +10 -> DBcAMP+Epi +10,0.071,0.046,0.124,1.000
+indice_extension,L4,DBcAMP+Epi +10 -> DBcAMP +10+10,-0.001,-0.006,0.000,0.083
+indice_extension,L4v2,Ringer -> Epi +10,0.020,0.004,0.039,1.000
+indice_extension,L4v2,Epi +10 -> DBcAMP +10,0.085,0.040,0.135,1.000

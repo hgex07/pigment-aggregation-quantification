@@ -17,7 +17,16 @@ CONTOUR_COLOR = "cyan"
 
 def od_color_limit(channels: dict[str, Channels]) -> float:
     """Tope común de la escala de OD, para que los colores sean comparables."""
-    return max(np.percentile(ch.od, 99.5) for ch in channels.values())
+    return max(np.percentile(ch.inside(ch.od), 99.5) for ch in channels.values())
+
+
+def _shown_gray(ch: Channels) -> np.ndarray:
+    """Canal original con el exterior del recorte en blanco (solo para dibujar)."""
+    return ch.gray if ch.roi is None else np.where(ch.roi, ch.gray, 1.0)
+
+
+def _shown(ch: Channels, image: np.ndarray, fill: float = 1.0) -> np.ndarray:
+    return image if ch.roi is None else np.where(ch.roi, image, fill)
 
 
 def plot_pipeline(name: str, ch: Channels, mask: np.ndarray, seed_thr: float, low_thr: float,
@@ -25,11 +34,11 @@ def plot_pipeline(name: str, ch: Channels, mask: np.ndarray, seed_thr: float, lo
     """Las etapas de una imagen en fila."""
     fig, axes = plt.subplots(1, 5, figsize=(17.5, 5.2))
     panels = [
-        (ch.gray, "1. Gris", "gray", (0, 1)),
-        (ch.background, "2. Fondo estimado", "gray", (0, 1)),
-        (ch.transmittance, "3. Transmitancia", "gray", (0, 1)),
+        (_shown_gray(ch), "1. Gris (canal elegido)", "gray", (0, 1)),
+        (_shown(ch, ch.background), "2. Fondo estimado", "gray", (0, 1)),
+        (_shown(ch, ch.transmittance), "3. Transmitancia", "gray", (0, 1)),
         (ch.od, "4. Densidad óptica", "magma", (0, od_max)),
-        (ch.gray, f"5. Máscara (OD > {low_thr:.2f}, unida a OD > {seed_thr:.3f})", "gray", (0, 1)),
+        (_shown_gray(ch), f"5. Máscara (OD > {low_thr:.2f}, unida a OD > {seed_thr:.3f})", "gray", (0, 1)),
     ]
     for ax, (image, title, cmap, (vmin, vmax)) in zip(axes, panels):
         shown = ax.imshow(image, cmap=cmap, vmin=vmin, vmax=vmax)
@@ -48,11 +57,11 @@ def plot_vertical(ch: Channels, mask: np.ndarray, od_max: float, path: Path, gap
     """Las etapas apiladas en vertical, sin texto ni barras de color."""
     h, w = ch.gray.shape
     panels = [
-        (ch.gray, "gray", 1.0),
-        (ch.background, "gray", 1.0),
-        (ch.transmittance, "gray", 1.0),
+        (_shown_gray(ch), "gray", 1.0),
+        (_shown(ch, ch.background), "gray", 1.0),
+        (_shown(ch, ch.transmittance), "gray", 1.0),
         (ch.od, "magma", od_max),
-        (ch.gray, "gray", 1.0),  # + contorno de la máscara
+        (_shown_gray(ch), "gray", 1.0),  # + contorno de la máscara
     ]
     total_h = len(panels) * h + (len(panels) - 1) * gap_px
     fig = plt.figure(figsize=(w / 100, total_h / 100), dpi=200, facecolor="white")
@@ -77,7 +86,7 @@ def _threshold_lines(ax, seed_thr: float, low_thr: float) -> None:
 def plot_comparison(names: list[str], channels: dict[str, Channels], masks: dict[str, np.ndarray],
                     tiles: dict[str, np.ndarray], sweep: pd.DataFrame, metrics: pd.DataFrame,
                     seed_thr: float, low_thr: float, path: Path) -> None:
-    """OD + máscara, teselas, barrido de umbrales y (con 2 imágenes) teselas emparejadas."""
+    """OD + máscara, teselas, barrido de umbrales y teselas emparejadas con la primera imagen."""
     n = len(names)
     fig = plt.figure(figsize=(5 * n + 6, 10))
     grid = fig.add_gridspec(2, n + 1)
@@ -93,6 +102,8 @@ def plot_comparison(names: list[str], channels: dict[str, Channels], masks: dict
         ax = fig.add_subplot(grid[1, i])
         shown = ax.imshow(tiles[name], cmap="viridis", vmin=0, vmax=100)
         for (row, col), value in np.ndenumerate(tiles[name]):
+            if np.isnan(value):
+                continue
             ax.text(col, row, f"{value:.0f}", ha="center", va="center", fontsize=8, color="w")
         ax.set_title(f"{name}: % pigmentado por tesela")
         ax.axis("off")
@@ -107,13 +118,17 @@ def plot_comparison(names: list[str], channels: dict[str, Channels], masks: dict
     ax.set_title("Robustez: barrido de umbrales")
     ax.legend()
 
-    if n == 2:
-        a, b = names
+    ref = names[0]
+    paired = [name for name in names[1:] if tiles[name].shape == tiles[ref].shape]
+    if paired:
         ax = fig.add_subplot(grid[1, n])
-        ax.scatter(tiles[a].ravel(), tiles[b].ravel(), s=18)
+        for name in paired:
+            ax.scatter(tiles[ref].ravel(), tiles[name].ravel(), s=18, label=name)
         ax.plot([0, 100], [0, 100], "k--", lw=0.8)
-        ax.set_xlabel(f"% pigmentado tesela ({a})")
-        ax.set_ylabel(f"% pigmentado tesela ({b})")
+        ax.set_xlabel(f"% pigmentado tesela ({ref})")
+        ax.set_ylabel(f"% pigmentado tesela ({paired[0]})" if len(paired) == 1 else "% pigmentado tesela (resto)")
+        if len(paired) > 1:
+            ax.legend(fontsize=8)
         ax.set_title("Teselas emparejadas (misma región)")
         ax.set_xlim(0, 100)
         ax.set_ylim(0, 100)
@@ -127,7 +142,7 @@ def plot_od_histogram(names: list[str], channels: dict[str, Channels], seed_thr:
                       low_thr: float, path: Path) -> None:
     fig, ax = plt.subplots(figsize=(7, 4.5))
     for name in names:
-        ax.hist(channels[name].od.ravel(), bins=150, range=(0, 1.2), histtype="step",
+        ax.hist(channels[name].inside(channels[name].od), bins=150, range=(0, 1.2), histtype="step",
                 density=True, lw=1.4, label=name)
     _threshold_lines(ax, seed_thr, low_thr)
     ax.set_xlabel("densidad óptica por píxel")

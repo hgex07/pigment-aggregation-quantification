@@ -1,0 +1,13 @@
+grupo,imagen,etapa,r_OD_vs_basal
+Control,Control_epinef_t0,Epi t0,0.815
+Control,Control_epinef_t15,Epi +15,0.012
+Control,Control_vehic_tf,Vehículo tf,0.024
+L2,L2'_epinef_10+10,Epi 10+10,0.859
+L2,L2_forsk_+10,Forsk +10,0.800
+L3,L3_epinef_+10,Epi +10,0.624
+L3,L3_caf_+15,Caf +15,0.577
+L4,L4_epinef_+10,Epi +10,0.831
+L4,L4_ampc+epinef_+10,DBcAMP+Epi +10,0.711
+L4,L4_+ampc_+10+10,DBcAMP +10+10,0.703
+L4v2,L4v2_epinef_+10,Epi +10,0.727
+L4v2,L4v2_ampc_+10,DBcAMP +10,0.730

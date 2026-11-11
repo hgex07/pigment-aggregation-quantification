@@ -1,9 +1,15 @@
 #!/usr/bin/env python3
 """Ejecuta la pipeline completa sobre una o más imágenes.
 
-    python analyze.py data/img1.png data/img2.png --labels img1 img2 --out results
+    python analyze.py data/img1.png data/img2.png --labels img1 img2 --out results/v1_test
+
+Recortes con transparencia (v2), p. ej. las fotos de la P3:
+
+    python analyze.py data/p3/L3_ringer.png data/p3/L3_epinef_+10.png \\
+        --labels ringer epinef --channel R --bg-order 0 --out results/L3
 
 Escribe en --out: metricas.csv, barrido_umbrales.csv, resumen.json y las figuras.
+Cada imagen se compara con la primera (referencia) si tienen el mismo tamaño.
 """
 from __future__ import annotations
 
@@ -16,8 +22,8 @@ import numpy as np
 import pandas as pd
 
 import figures
-from pigment_pipeline import (Params, compute_channels, compute_metrics, load_gray,
-                              otsu_threshold, segment, threshold_sweep, tile_percent)
+from pigment_pipeline import (Channels, Params, compute_metrics, load_channels, otsu_threshold,
+                              segment, threshold_sweep, tile_percent)
 
 SWEEP_THRESHOLDS = np.linspace(0.02, 0.8, 79)
 
@@ -32,15 +38,24 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
-def pairwise_summary(a: str, b: str, od_maps, tiles, sweep) -> dict:
-    """Comparación de dos imágenes alineadas: b respecto a a."""
+def pairwise_summary(a: str, b: str, channels: dict[str, Channels], tiles, sweep) -> dict | None:
+    """Comparación de dos imágenes alineadas: b respecto a a (None si no son del mismo tamaño)."""
+    ch_a, ch_b = channels[a], channels[b]
+    if ch_a.od.shape != ch_b.od.shape:
+        return None
+    both = np.ones(ch_a.od.shape, bool)
+    for roi in (ch_a.roi, ch_b.roi):
+        if roi is not None:
+            both &= roi
+    ta, tb = tiles[a].ravel(), tiles[b].ravel()
+    ok = ~(np.isnan(ta) | np.isnan(tb))
     return {
         "a": a,
         "b": b,
-        "correlacion_od_pixel_a_pixel": float(np.corrcoef(od_maps[a].ravel(), od_maps[b].ravel())[0, 1]),
-        "teselas_b_mayor_que_a": int((tiles[b] > tiles[a]).sum()),
-        "teselas_totales": int(tiles[a].size),
-        "mediana_diferencia_teselas_b_menos_a_pct": float(np.median(tiles[b] - tiles[a])),
+        "correlacion_od_pixel_a_pixel": float(np.corrcoef(ch_a.od[both], ch_b.od[both])[0, 1]),
+        "teselas_b_mayor_que_a": int((tb[ok] > ta[ok]).sum()),
+        "teselas_totales": int(ok.sum()),
+        "mediana_diferencia_teselas_b_menos_a_pct": float(np.median(tb[ok] - ta[ok])) if ok.any() else None,
         "fraccion_umbrales_b_mayor_que_a": float((sweep[b] > sweep[a]).mean()),
     }
 
@@ -53,20 +68,24 @@ def main() -> None:
         raise SystemExit("hace falta un label por imagen")
     args.out.mkdir(parents=True, exist_ok=True)
 
-    channels = {name: compute_channels(load_gray(path), params) for name, path in zip(names, args.images)}
-    od_maps = {name: ch.od for name, ch in channels.items()}
-    seed_thr = otsu_threshold(list(od_maps.values()))
-    masks = {name: segment(od, seed_thr, params.low_thr, params.min_object_px) for name, od in od_maps.items()}
-    tiles = {name: tile_percent(mask, params.tile_px) for name, mask in masks.items()}
-    sweep = threshold_sweep(od_maps, SWEEP_THRESHOLDS)
+    channels = {name: load_channels(path, params) for name, path in zip(names, args.images)}
+    seed_thr = params.seed_thr if params.seed_thr > 0 else otsu_threshold(list(channels.values()))
+    masks = {name: segment(ch.od, seed_thr, params.low_thr, params.min_object_px, ch.roi)
+             for name, ch in channels.items()}
+    tiles = {name: tile_percent(masks[name], params.tile_px, ch.roi) for name, ch in channels.items()}
+    sweep = threshold_sweep(channels, SWEEP_THRESHOLDS)
 
-    metrics = pd.DataFrame({name: compute_metrics(od_maps[name], masks[name]) for name in names}).T
+    metrics = pd.DataFrame({name: compute_metrics(channels[name], masks[name]) for name in names}).T
     metrics.index.name = "imagen"
-    summary = {"umbral_semilla_otsu": seed_thr, "umbral_bajo": params.low_thr, "parametros": asdict(params)}
-    if len(names) == 2:
-        a, b = names
-        summary["comparacion"] = pairwise_summary(a, b, od_maps, tiles, sweep)
-        metrics.loc[f"{b} / {a}"] = metrics.loc[b] / metrics.loc[a]
+    summary = {"umbral_semilla": seed_thr, "umbral_bajo": params.low_thr, "parametros": asdict(params),
+               "recorte_con_alfa": {name: ch.roi is not None for name, ch in channels.items()},
+               "comparaciones": []}
+    ref = names[0]
+    for other in names[1:]:
+        comparison = pairwise_summary(ref, other, channels, tiles, sweep)
+        if comparison is not None:
+            summary["comparaciones"].append(comparison)
+        metrics.loc[f"{other} / {ref}"] = metrics.loc[other] / metrics.loc[ref]
 
     metrics.to_csv(args.out / "metricas.csv", float_format="%.4f")
     sweep.to_csv(args.out / "barrido_umbrales.csv", index=False, float_format="%.4f")
